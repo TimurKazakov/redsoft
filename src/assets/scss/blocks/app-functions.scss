@@ -1,0 +1,41 @@
+.app-functions{
+  background:#f1f4fc ;
+  clip-path: polygon(0 100%, 0 15%, 25% 7%, 50% 4%,75% 7% , 100% 15%, 100% 100% );
+  height: 790px;
+  .app-functions__container{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+  }
+
+  .app-functions__title{
+
+    margin-top: 150px;
+    @include title();
+
+  }
+  .app-functions__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 45px;
+
+
+  }
+  .app-functions__item{
+    flex-basis: 32%;
+    margin-bottom: 75px;
+
+  }
+  .app-function__item-img{
+    @include size(80px,80px);
+  }
+
+  .app-functions__item-descr{
+    @include decsr();
+    margin-top: 20px;
+  }
+}
